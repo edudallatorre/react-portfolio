@@ -8,7 +8,7 @@
 
 ## `npm i @fortawesome/free-brands-svg-icons`
 
-## `npm i @fortawesome/react-fontawesome `
+## `npm i @fortawesome/react-fontawesome`
 
 ## `npm i animate.css`
 
