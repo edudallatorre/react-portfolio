@@ -10,13 +10,20 @@ const Home = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
 
-    const nameArray = ['E','d', 'u', 'a', 'r', 'd', 'o', '','D','a','l','l','a','','T','o','r','r','e']
+    const nameArray = [
+      'I',
+      '\'m',
+      '',
+      'E',
+      'd', 
+      'u', 
+      'a', 
+      'r', 
+      'd', 
+      'o'
+    ]
     const jobArray = [
-      'w',
-      'e',
-      'b',
-      ' ',
-      'd',
+      'D',
       'e',
       'v',
       'e',
@@ -25,18 +32,28 @@ const Home = () => {
       'p',
       'e',
       'r',
-      '.',
     ]
+
+    useEffect(() => {
+      return setTimeout(() => {
+        setLetterClass('text-animate-hover')
+      }, 4000)
+    }, [])
   
 
     return (
      <div className="container home-page">
         <div>
             <h1>
+             <span className={letterClass}>H</span>
+             <span className={`${letterClass} _12`}>i,</span><br />
             <AnimatedLetters letterClass={letterClass} 
              strArray={nameArray}
             idx={15}
-             />
+             /><br />
+             <AnimatedLetters letterClass={letterClass}
+             strArray={jobArray} 
+             idx={22}/>
             {/* <img src={LogoTitle} alt="developer" /> */}
              <br />
              </h1>
